@@ -5,7 +5,8 @@
 @endsection
 
 @section('content')
-    <form action="" method="POST">
+    <form action="{{route('registersave')}}" method="POST">
+        @csrf
         <div class="mb-3">
             <label for="username" class="form-label">Name</label>
             <input type="text" class="form-control" name="name" id="username">
