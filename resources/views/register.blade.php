@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <form action="{{route('registersave')}}" method="POST">
+    <form action="{{ route('registersave') }}" method="POST">
         @csrf
         <div class="mb-3">
             <label for="username" class="form-label">Name</label>
@@ -25,7 +25,7 @@
         </div>
         <div class="mb-3">
             <button type="submit" class="btn btn-success btn-sm">Register</button>
-            <a href="{{route('login')}}" class="btn btn-warning btn-sm">Login</a>
+            <a href="{{ route('login') }}" class="btn btn-warning btn-sm">Login</a>
         </div>
     </form>
 @endsection

@@ -2,6 +2,7 @@
 
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 
 /*
@@ -22,3 +23,5 @@ Route::get('/', function () {
 route::view('register','register')->name('register');
 route::view('login','login')->name('login');
 route::post('/register',[RegisterController::class,'register'])->name('registersave');
+route::post('/login',[LoginController::class,'login'])->name('loginmatch');
+route::get('/dashboard',[LoginController::class,'dashboard'])->name('dashboard');

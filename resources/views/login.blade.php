@@ -5,7 +5,8 @@
 @endsection
 
 @section('content')
-    <form action="" method="POST">
+    <form action="{{ route('loginmatch') }}" method="POST">
+        @csrf
         <div class="mb-3">
             <label for="useremail" class="form-label">Email</label>
             <input type="text" class="form-control" name="email" id="useremail">
